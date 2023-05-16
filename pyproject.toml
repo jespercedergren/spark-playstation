@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "playstation"
+version = "0.1.0"
+description = "some desc"
+authors = ["Jesper Cedergren"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyspark = "3.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pre-commit = "*"
+jupyter = "*"
+pandas = "*"

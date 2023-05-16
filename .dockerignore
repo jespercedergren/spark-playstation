@@ -1,0 +1,4 @@
+*
+!/tools/docker/dockerfiles
+!pyproject.toml
+!/src

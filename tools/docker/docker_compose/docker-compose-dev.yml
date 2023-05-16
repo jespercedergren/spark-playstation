@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  dev:
+    image: playstation/dev
+    container_name: playstation_dev
+    ports:
+      - "8889:8889" #jupyter notebook
+      - "4040:4040" #spark UI
+    volumes:
+      - ../../../src:/src
+      - ../../../tools/notebooks:/notebooks
+      - ../../../tests:/tests
+    entrypoint: /usr/bin/tail -f /dev/null
+    networks:
+      - playstation_network
+
+networks:
+  playstation_network:
+    name: playstation_network
