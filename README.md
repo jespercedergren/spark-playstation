@@ -32,11 +32,11 @@ make dev_notebook
 
 which can accessed on `localhost:8889` using the link (with the token) provided in the logs after running the command above.
 
-To run the the application code to create the output data, open a new terminal and run. 
+To run the the application code to create the output data, open a new terminal and run
 
 ```
 make run_app
 ```
 
-This will write the files to `./tests/resources/data/output`. Note that this expects the full input data set will be avialable at the input path specified in the [config](src/playstation/config.py). 
+This will write the files to `./tests/resources/data/output`. Note that this expects the full input data set will to be available at the input path specified in the [config](src/playstation/config.py). 
 
